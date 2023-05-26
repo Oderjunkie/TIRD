@@ -25,3 +25,8 @@ numeric constants are defined as matching the regex `/[\d.]+/`. strings match `/
 - `=`: check if the left and right branches of the current node's values' are equal, then put the result in the current node. `1.0` if true,
   `0.0` if false. if one of the branches doesn't exist, its value is treated as being the current node's value.
 - `!`: binary not the current node's value. `0.0` is false, and anything but is true. the output is either `0.0` or `1.0`.
+
+## example programs
+- count from 1 to 10, exclusive: `1{)10^<|.)1^+}`
+- fizzbuzz: `1{)100^<|[)15^%)0^=|["FizzBuzz".|]][)15^%)0^=!|[)5^%)0^=|["Buzz".|]][)5^%)0^=!|[)3^%)0^=|["Fizz".|]][)3^%)0^=!|.]]])1^+}`
+- truth machine: `,#[!|.]{|.}`
