@@ -5,7 +5,7 @@
 #include <readline/history.h>
 
 int main(void) {
-  printf("TIRD repl v0.0, otesunki 2023\n");
+  printf("TIRD repl v1.0, otesunki 2023\n");
   using_history();
   for (;;) {
     static char *src;
