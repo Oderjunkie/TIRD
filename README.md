@@ -24,8 +24,7 @@ Numeric constants are defined as matching the regex `/[\d.]+/`. strings match `/
 | `+`            | Add the left and right branches of the current node's values, then put the result in the current node. If one of the branches doesn't exist, its value is treated as being the current node's value.
 | `-`            | Subtract the right branch of the current node's value from the left branch's, then put the result in the current node. If one of the branches doesn't exist, its value is treated as being the current node's value.
 | `%`            | Modulo the left branch's value by the right branch's value, then put the result in the current node. If one of the branches doesn't exist, its value is treated as being the current node's value.
-| `=`            | Check if the left and right branches of the current node's values' are equal, then put the result in the current node. `1.0` if true,
-| `0.0`          | If false. If one of the branches doesn't exist, its value is treated as being the current node's value.
+| `=`            | Check if the left and right branches of the current node's values' are equal, then put the result in the current node. `1.0` if true, `0.0` If false. If one of the branches doesn't exist, its value is treated as being the current node's value.
 | `!`            | Binary not the current node's value. `0.0` is false, and anything but is true. The output is either `0.0` or `1.0`.
 
 ## Example programs
